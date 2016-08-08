@@ -66,7 +66,7 @@ var fileBinaryIdentifiers =
  ````
 For direct insertion into the code this data must be assigned to a variable.
 
-5. Run the python script, ensuring that you have included the `InterACT.js` **below** the video component in `index.html`.
+5 . Run the python script, ensuring that you have included the `InterACT.js` **below** the video component in `index.html`.
 
 
 Your compatible browser should now display randomly selected segments of your chosen videos infinitely appending them until there is no more buffer space available. Many thanks to [this](http://stackoverflow.com/questions/37786956/media-source-extensions-appendbuffer-of-webm-stream-in-random-order) post by [lukyer](http://stackoverflow.com/users/1977799/lukyer) that pointed me in the right direction. 
