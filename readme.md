@@ -15,7 +15,7 @@ To use this code you need:
 <video controls autoplay width="640" height="480"></video>
 ````
 
-4. A **compatible** WebM video file.
+4 . A **compatible** WebM video file.
 
 4.i. Obtain a video file, `.mp4`, `.WebM`, or some other format that plays nice with ffmpeg.
 
