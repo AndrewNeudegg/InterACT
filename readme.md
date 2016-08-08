@@ -36,18 +36,18 @@ To use this code you need:
 
  ````json
 {
-  "type": "video/webm; codecs=\"vp8, vorbis\"",
-  "duration": 17595.000000,
-  "init": { "offset": 0, "size": 4249},
+  "type": "video/webm; codecs=\"vp8\"",
+  "duration": 17600.000000,
+  "init": { "offset": 0, "size": 326},
   "media": [
-    { "offset": 4249, "size": 11757, "timecode": 0.000000 },
-    { "offset": 16006, "size": 9128, "timecode": 0.039000 },
-    { "offset": 25134, "size": 9303, "timecode": 0.063000 },
-    { "offset": 34437, "size": 8958, "timecode": 0.109000 },
-    { "offset": 43395, "size": 9259, "timecode": 0.155000 },
-    { "offset": 52654, "size": 10202, "timecode": 0.202000 },
-// ...40 Entries later...
-  ]
+    { "offset": 326, "size": 15159, "timecode": 0.000000 },
+    { "offset": 15485, "size": 8234, "timecode": 0.400000 },
+    { "offset": 23719, "size": 5807, "timecode": 0.800000 },
+    { "offset": 29526, "size": 6818, "timecode": 0.920000 },
+    { "offset": 36344, "size": 9410, "timecode": 1.320000 },
+    { "offset": 45754, "size": 6869, "timecode": 1.720000 },
+    { "offset": 52623, "size": 8668, "timecode": 1.920000 },
+ // ...40 Entries later...
 }
  ````
  to include information about the video file location and remove the `""` quotation marks. Eg:
@@ -85,7 +85,7 @@ Your compatible browser should now display randomly selected segments of your ch
 ## Points of interest
 For this technique to work the MSE **must always** add the metadata from the video first, this can be seen in the output from the `mse_json_manifest` tool in the line:
 ````json
-init: { "offset": 0, "size": 4249},
+  "init": { "offset": 0, "size": 326}
 ````
 This line must become the first segment loaded:
 ````Javascript
