@@ -5,11 +5,12 @@
 
 ## Basic Setup
 To use this code you need:
-1. A [compatible](http://caniuse.com/#feat=mediasource) Web Browser.
 
-2. A Web Server (A simple python webserver is available /Code/SimpleHttpServer.py).
+1 . A [compatible](http://caniuse.com/#feat=mediasource) Web Browser.
 
-3. A HTML page with a video tag.
+2 . A Web Server (A simple python webserver is available /Code/SimpleHttpServer.py).
+
+3 . A HTML page with a video tag.
 
 ````HTML
 <video controls autoplay width="640" height="480"></video>
