@@ -1,0 +1,14 @@
+### InterACT .gitignore v0.0.1 ###
+
+# Video Files
+*.webm
+
+# Compiled Code Files
+*.exe
+
+# OS Files
+*.thumbs
+
+# Directories
+Debug
+Tests
