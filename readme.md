@@ -6,12 +6,17 @@
 ## Basic Setup
 To use this code you need:
 1. A [compatible](http://caniuse.com/#feat=mediasource) Web Browser.
+
 2. A Web Server (A simple python webserver is available /Code/SimpleHttpServer.py).
+
 3. A HTML page with a video tag.
+
 ````HTML
 <video controls autoplay width="640" height="480"></video>
 ````
- 4. A **compatible** WebM video file.
+
+4. A **compatible** WebM video file.
+
 4.i. Obtain a video file, `.mp4`, `.WebM`, or some other format that plays nice with ffmpeg.
 
 4.ii. Obtain `ffmpeg`, some users will need to compile or [download](https://ffmpeg.org/download.html) ffmpeg. [Media-autobuild_suite](https://github.com/jb-alvarado/media-autobuild_suite) is a good tool for Windows users, the light build will work (libvpx).
