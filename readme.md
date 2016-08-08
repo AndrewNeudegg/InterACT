@@ -12,21 +12,21 @@ To use this code you need:
 <video controls autoplay width="640" height="480"></video>
 ````
  4. A **compatible** WebM video file.
-⋅⋅1. Obtain a video file, `.mp4`, `.WebM`, or some other format that plays nice with ffmpeg.
+4.i. Obtain a video file, `.mp4`, `.WebM`, or some other format that plays nice with ffmpeg.
 
-⋅⋅2. Obtain `ffmpeg`, some users will need to compile or [download](https://ffmpeg.org/download.html) ffmpeg. [Media-autobuild_suite](https://github.com/jb-alvarado/media-autobuild_suite) is a good tool for Windows users, the light build will work (libvpx).
+4.ii. Obtain `ffmpeg`, some users will need to compile or [download](https://ffmpeg.org/download.html) ffmpeg. [Media-autobuild_suite](https://github.com/jb-alvarado/media-autobuild_suite) is a good tool for Windows users, the light build will work (libvpx).
 
-⋅⋅3. Obtain `sample_muxer` by building `libwebm` found [here](https://github.com/webmproject/libwebm).
+4.iii. Obtain `sample_muxer` by building `libwebm` found [here](https://github.com/webmproject/libwebm).
 
-⋅⋅4. Obtain `mse-tools` and build `mse_json_manifest`, tools and guide avaliable [here](https://github.com/acolwell/mse-tools).
+4.iv. Obtain `mse-tools` and build `mse_json_manifest`, tools and guide avaliable [here](https://github.com/acolwell/mse-tools).
 
-⋅⋅5. Run `ffmpeg -i yourfile.ext -g 10 -c:v libvpx result.webm`.
+4.v. Run `ffmpeg -i yourfile.ext -g 10 -c:v libvpx result.webm`.
 
-⋅⋅6. Run `sample_muxer -i result.webm -o resultRepaired.webm`.
+4.vi. Run `sample_muxer -i result.webm -o resultRepaired.webm`.
 
-⋅⋅7. Run `mse_json_manifest resultRepaired.webm` to get the alignment information passed to stdout. Additionally you could run `mse_json_manifest resultRepaired.webm > out.json` on Windows to save the information to file.
+4.vii. Run `mse_json_manifest resultRepaired.webm` to get the alignment information passed to stdout. Additionally you could run `mse_json_manifest resultRepaired.webm > out.json` on Windows to save the information to file.
 
-⋅⋅8. Reformat the alignment information from:
+4.viii. Reformat the alignment information from:
 
  ````json
 {
@@ -40,7 +40,7 @@ To use this code you need:
     { "offset": 34437, "size": 8958, "timecode": 0.109000 },
     { "offset": 43395, "size": 9259, "timecode": 0.155000 },
     { "offset": 52654, "size": 10202, "timecode": 0.202000 },
-...40 Entries later...
+// ...40 Entries later...
   ]
 }
  ````
