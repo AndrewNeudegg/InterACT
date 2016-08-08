@@ -1,1 +1,1 @@
-# This folder is intentionally left 
+# This folder is intentionally left blank
